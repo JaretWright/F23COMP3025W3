@@ -34,11 +34,80 @@
                 android:layout_height="wrap_content"
                 android:text="@string/meal_amount"/>
 
+            <EditText
+                android:id="@+id/mealPreTipAmountEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="@string/enter_meal_amount"
+                android:textColorHint="#c7c5c5"
+                android:layout_span="2"
+                android:textAlignment="textEnd"/>
+        </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:max="25"
+                android:progress="15"
+                android:thumbTint="#eae8ea"
+                android:progressTint="#eae8ea"/>
+
+            <TextView
+                android:id="@+id/tipPercentTextView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_15"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_amount"/>
+
+            <TextView
+                android:id="@+id/totalTipAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textAlignment="textEnd"
+                tools:text="$15.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_amount"/>
+
+            <TextView
+                android:id="@+id/totalMealCostTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="$15.00"
+                android:layout_span="2"
+                android:textAlignment="textEnd"/>
         </TableRow>
 
 
     </TableLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
