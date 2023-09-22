@@ -41,6 +41,7 @@
                 android:inputType="numberDecimal"
                 android:hint="@string/enter_meal_amount"
                 android:textColorHint="#c7c5c5"
+                android:textColor="@color/white"
                 android:layout_span="2"
                 android:textAlignment="textEnd"/>
         </TableRow>
